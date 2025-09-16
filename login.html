@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Shoping</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex align-items-center w-100 justify-content-sm-end">
+              <a href="login.html" class="btn btn-outline-success mx-2"
+                >Login</a
+              >
+              <a href="register.html" class="btn btn-outline-primary mx-2"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--end nav -->
+    <!-- form -->
+    <section>
+      <div class="container centerForm p-4">
+        <form class="row g-3" id="loginForm">
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="x@y.com"
+            />
+          </div>
+          <div class="col-12">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+        <div class="row mt-2">
+          <p>Didn't have an acount <a href="register.html">Register</a> ?</p>
+        </div>
+      </div>
+    </section>
+    <!-- end form -->
+    <!-- toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Thanks!</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          <span id="toastStatue"></span>
+          <span id="toastContent"></span>
+        </div>
+      </div>
+    </div>
+    <!-- end toast -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/toast.js" type="module"></script>
+    <script src="js/loginScript.js" type="module"></script>
+  </body>
+</html>

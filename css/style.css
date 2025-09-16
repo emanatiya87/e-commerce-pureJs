@@ -1,0 +1,15 @@
+header {
+  background-color: #dddddd8a;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.navbar-brand {
+  font-family: cursive;
+}
+.centerForm {
+  border: 1px solid #ddd;
+  border-radius: 40px 10px 40px 10px;
+  margin-top: 120px;
+}
