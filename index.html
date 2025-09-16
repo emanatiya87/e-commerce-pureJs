@@ -14,18 +14,8 @@
       <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Shoping</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div id="navbarSupportedContent">
             <div class="d-flex align-items-center w-100 justify-content-sm-end">
               <a href="login.html" class="btn btn-outline-success mx-2"
                 >Login</a
@@ -35,11 +25,21 @@
               >
             </div>
           </div>
+          <div class="align-items-center" id="navUserData">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-user mx-2 text-secondary"></i
+              ><span id="UserName">user</span>
+            </div>
+            <button class="btn btn-outline-danger mx-2" id="logoutBTN">
+              <i class="fa-solid fa-right-from-bracket pe-1"></i> Logout
+            </button>
+          </div>
         </div>
       </nav>
     </header>
     <!--end nav -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/setupUI.js"></script>
   </body>
 </html>
