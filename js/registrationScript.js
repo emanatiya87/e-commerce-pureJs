@@ -16,6 +16,8 @@ registrationForm.onsubmit = function (e) {
     lastName: lastName.value,
     email: email.value,
     password: password.value,
+    myCartProducts: [],
+    myFav: [],
   };
   localStorage.setItem("users", JSON.stringify([...users, newUser]));
   toastShow("Your account created successfully", "right");

@@ -1,13 +1,13 @@
-body {
-  background-color: rgba(0, 0, 0, 0.397);
+:root {
+  --primary: #1d4ca5;
 }
 header {
   background-color: #dddddd8a;
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 99;
 }
-
 .navbar-brand {
   font-family: cursive;
 }
@@ -26,6 +26,30 @@ header {
   color: white;
   transition: background-color 700ms;
 }
-.heart:hover {
+.heart:hover,
+.heartClicked {
   background-color: rgb(175, 11, 11);
+}
+.productCard {
+  transition: transform 0.5s;
+  border: 1px solid #ddd;
+}
+.productCard:hover {
+  transform: translateY(-15px);
+  border: 1px solid var(--primary);
+}
+.title {
+  display: inline-block;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background-color: var(--primary);
+  bottom: 0px;
+  left: 0;
+}
+#totalPrice {
+  display: none;
 }

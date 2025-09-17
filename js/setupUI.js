@@ -7,7 +7,7 @@ let UserName = document.getElementById("UserName");
 if (currentUser) {
   navUserData.style.display = "flex";
   navbarSupportedContent.style.display = "none";
-  UserName.innerHTML = JSON.parse(currentUser).firstName.toUpperCase();
+  UserName.innerHTML = `Hello ${JSON.parse(currentUser).firstName}`;
 } else {
   navUserData.style.display = "none";
   navbarSupportedContent.style.display = "block";
