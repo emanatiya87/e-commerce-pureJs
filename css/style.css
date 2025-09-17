@@ -1,3 +1,6 @@
+body {
+  background-color: rgba(0, 0, 0, 0.397);
+}
 header {
   background-color: #dddddd8a;
   position: fixed;
@@ -8,8 +11,21 @@ header {
 .navbar-brand {
   font-family: cursive;
 }
+.upperSection {
+  margin-top: 120px;
+}
 .centerForm {
   border: 1px solid #ddd;
   border-radius: 40px 10px 40px 10px;
   margin-top: 120px;
+}
+/* card */
+.heart {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: background-color 700ms;
+}
+.heart:hover {
+  background-color: rgb(175, 11, 11);
 }

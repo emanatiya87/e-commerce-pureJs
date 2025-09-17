@@ -38,6 +38,57 @@
       </nav>
     </header>
     <!--end nav -->
+    <!-- search -->
+    <section>
+      <div class="container upperSection">
+        <form id="searchForm">
+          <div class="row g-3">
+            <div class="col-sm">
+              <select
+                name="filter"
+                id="filterInput"
+                class="form-select"
+                required
+              >
+                <option value="" selected hidden>Filter By:</option>
+                <option value="categorty">Category</option>
+                <option value="title">Title</option>
+              </select>
+            </div>
+            <div class="col-sm-7">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+                </div>
+                <input
+                  type="search"
+                  class="form-control"
+                  id="searchInput"
+                  placeholder="search"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <input
+                type="submit"
+                class="form-control btn btn-outline-primary"
+                placeholder="Zip"
+                aria-label="Zip"
+                value="Search"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--end search -->
+    <!-- products -->
+    <section>
+      <div class="container mt-5">
+        <div class="row" id="productsContainer"></div>
+      </div>
+    </section>
+    <!-- end Products -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/setupUI.js"></script>
