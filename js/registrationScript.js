@@ -11,6 +11,7 @@ registrationForm.onsubmit = function (e) {
   e.preventDefault();
   let users = JSON.parse(localStorage.getItem("users")) || [];
   let newUser = {
+    id: Date.now(),
     firstName: firstName.value,
     lastName: lastName.value,
     email: email.value,
