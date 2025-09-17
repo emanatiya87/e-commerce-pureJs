@@ -12,11 +12,9 @@ loginForm.onsubmit = function (e) {
     email: email.value,
     password: password.value,
   };
-  console.log(newUser);
   let exist = users.find(
     (u) => u.email == newUser.email && u.password == newUser.password
   );
-  console.log(exist);
   if (exist) {
     toastShow("Logged in Successfully", "right");
     localStorage.setItem("loggedinUser", JSON.stringify(exist));
